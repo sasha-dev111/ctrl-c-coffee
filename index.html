@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Ctrl+C Coffee | Головна</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="assets/img/logo.png" alt="Logo" width="300">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Головна</a></li>
+                    <li><a href="#desserts">Десерти</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                </ul>
+            </nav>
+            <div id="user-greeting" style="margin-left: auto; margin-right: 20px; color: #58a6ff;"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="terminal-box">
+            <h1><span class="prompt">></span> Наша Кава</h1>
+            <p class="subtitle">Виберіть свій рівень енергії:</p>
+        </div>
+
+        <div class="menu-grid">
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=500" alt="Espresso">
+                </div>
+                <div class="card-content">
+                    <a href="coffee/espresso.html" class="item-title">Еспресо (Turbo Boost)</a>
+                    <p>Чиста енергія для швидкого деплою.</p>
+                    <div class="card-footer">
+                        <span class="price">45 ₴</span>
+                        <button class="buy-btn">Ctrl+V</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=500" alt="Cappuccino">
+                </div>
+                <div class="card-content">
+                    <a href="coffee/capuchino.html" class="item-title">Капучино (Stable Build)</a>
+                    <p>Ідеальний баланс коду та молочної піни.</p>
+                    <div class="card-footer">
+                        <span class="price">60 ₴</span>
+                        <button class="buy-btn">Ctrl+V</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=500" alt="Latte">
+                </div>
+                <div class="card-content">
+                    <a href="coffee/latte.html" class="item-title">Лате (Smooth UI)</a>
+                    <p>Найм'якший інтерфейс для твого ранку.</p>
+                    <div class="card-footer">
+                        <span class="price">65 ₴</span>
+                        <button class="buy-btn">Ctrl+V</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="desserts" class="terminal-box" style="margin-top: 80px;">
+            <h1><span class="prompt">></span> Наші Десерти</h1>
+            <p class="subtitle">Солодкі патчі для вашого настрою:</p>
+        </div>
+
+        <div class="menu-grid">
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="https://media.istockphoto.com/id/177819471/photo/portion-of-fresh-raspberry-jello.webp?a=1&b=1&s=612x612&w=0&k=20&c=xCpI1YMa8Mx2pWaN2Fz86zSl1vBfqA6GLUWbZoDjWVg=" alt="Jelly">
+                </div>
+                <div class="card-content">
+                    <a href="desserts/jelly.html" class="item-title">Малинове Желе</a>
+                    <p>Легкий десерт, який не навантажує систему.</p>
+                    <div class="card-footer">
+                        <span class="price">35 ₴</span>
+                        <button class="buy-btn">Ctrl+V</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=500" alt="Cake">
+                </div>
+                <div class="card-content">
+                    <a href="desserts/cake.html" class="item-title">Шоколадний Торт</a>
+                    <p>Ніжний бісквіт з кремом. Ммм, як смачно!</p>
+                    <div class="card-footer">
+                        <span class="price">75 ₴</span>
+                        <button class="buy-btn">Ctrl+V</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=500" alt="Pastry">
+                </div>
+                <div class="card-content">
+                    <a href="desserts/pastry.html" class="item-title">Тістечко</a>
+                    <p>Маленький, але важливий компонент кави.</p>
+                    <div class="card-footer">
+                        <span class="price">40 ₴</span>
+                        <button class="buy-btn">Ctrl+V</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="terminal-box" style="margin-top: 80px; text-align: center; margin-bottom: 50px;">
+            <h2 style="color: #7ee787;">Яка кава вам сподобалась найбільше?</h2>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Ctrl+C Coffee</p>
+    </footer>
+
+    <a href="cart.html" id="cart-icon" style="position: fixed; top: 20px; right: 20px; background: #161b22; padding: 10px 15px; border-radius: 30px; border: 1px solid #30363d; cursor: pointer; z-index: 1000; font-family: 'Montserrat', sans-serif; font-weight: bold; text-decoration: none; color: inherit;">
+        🛒 <span id="cart-count" style="background: #238636; padding: 2px 8px; border-radius: 20px; margin-left: 5px;">0</span>
+    </a>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let currentUser = JSON.parse(localStorage.getItem('currentUser')) || null;
+
+        function saveCart() {
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        function addToCart(id, name, price) {
+            const existing = cart.find(item => item.id === id);
+            if (existing) {
+                existing.quantity++;
+            } else {
+                cart.push({ id: id, name: name, price: price, quantity: 1 });
+            }
+            saveCart();
+            updateCartDisplay();
+            console.log(`✅ ${name} додано. Корзина:`, cart);
+        }
+
+        function updateCartDisplay() {
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const cartCountSpan = document.getElementById('cart-count');
+            if (cartCountSpan) {
+                cartCountSpan.innerText = totalItems;
+            }
+        }
+
+        function updateUserGreeting() {
+            const greetingDiv = document.getElementById('user-greeting');
+            if (!greetingDiv) return;
+            
+            if (currentUser) {
+                greetingDiv.innerHTML = `
+                    👤 ${currentUser.name} 
+                    <button id="logout-btn" style="background: none; border: 1px solid #58a6ff; color: #58a6ff; border-radius: 6px; padding: 4px 10px; margin-left: 10px; cursor: pointer;">Вийти</button>
+                `;
+                const logoutBtn = document.getElementById('logout-btn');
+                if (logoutBtn) {
+                    logoutBtn.addEventListener('click', () => {
+                        currentUser = null;
+                        localStorage.removeItem('currentUser');
+                        updateUserGreeting();
+                        alert('Ви вийшли з аккаунту');
+                    });
+                }
+            } else {
+                greetingDiv.innerHTML = `<button id="register-btn" style="background: #238636; border: none; color: white; border-radius: 6px; padding: 4px 12px; cursor: pointer;">🔑 Реєстрація</button>`;
+                const registerBtn = document.getElementById('register-btn');
+                if (registerBtn) {
+                    registerBtn.addEventListener('click', showRegistrationModal);
+                }
+            }
+        }
+
+        function showRegistrationModal() {
+            const name = prompt('Введіть ваше ім\'я:');
+            if (!name) return;
+            
+            const phone = prompt('Введіть ваш номер телефону:');
+            if (!phone) return;
+            
+            currentUser = {
+                name: name,
+                phone: phone,
+                registeredAt: new Date().toISOString()
+            };
+            localStorage.setItem('currentUser', JSON.stringify(currentUser));
+            updateUserGreeting();
+            alert(`Вітаємо, ${name}! Тепер ви можете оформлювати замовлення.`);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartDisplay();
+            updateUserGreeting();
+
+            const buttons = document.querySelectorAll('.buy-btn');
+            console.log(`Знайдено кнопок: ${buttons.length}`);
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const card = this.closest('.card');
+                    if (!card) {
+                        console.error('Картка не знайдена');
+                        return;
+                    }
+
+                    const titleElement = card.querySelector('.item-title');
+                    const priceElement = card.querySelector('.price');
+
+                    if (!titleElement || !priceElement) {
+                        console.error('Назва або ціна не знайдені');
+                        return;
+                    }
+
+                    const name = titleElement.innerText.trim();
+                    const price = parseInt(priceElement.innerText);
+                    const id = name.toLowerCase().replace(/ /g, '-').replace(/[()]/g, '');
+
+                    addToCart(id, name, price);
+
+                    const originalText = this.innerText;
+                    this.innerText = '✓';
+                    setTimeout(() => {
+                        this.innerText = originalText;
+                    }, 500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
