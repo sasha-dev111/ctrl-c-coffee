@@ -172,3 +172,22 @@ footer {
     border-bottom: 2px solid #30363d;
     margin-bottom: 20px;
 }
+.back-btn-neon {
+    text-decoration: none;
+    color: #58a6ff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: 1px solid #30363d;
+    padding: 12px 25px;
+    border-radius: 8px;
+    background: #161b22;
+    transition: all 0.3s ease;
+}
+
+.back-btn-neon:hover {
+    color: #ffffff;
+    background: #238636; 
+    border-color: #7ee787;
+    box-shadow: 0 0 20px rgba(126, 231, 135, 0.5); 
+    transform: translateY(-3px); 
+}
