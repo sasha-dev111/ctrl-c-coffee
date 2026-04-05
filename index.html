@@ -157,8 +157,7 @@
             const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
             const cartCountSpan = document.getElementById('cart-count');
             if (cartCountSpan) {
-                cartCountSpan.innerText = totalItems;
-            }
+                cartCountSpan.innerText = totalItems; }
         }
 
         function updateUserGreeting() {
@@ -173,10 +172,12 @@
                 const logoutBtn = document.getElementById('logout-btn');
                 if (logoutBtn) {
                     logoutBtn.addEventListener('click', () => {
-                        currentUser = null;
-                        localStorage.removeItem('currentUser');
-                        updateUserGreeting();
-                        alert('Ви вийшли з аккаунту');
+                        if (confirm('Ви впевнені, що хочете вийти з акаунту?')) {
+                            currentUser = null;
+                            localStorage.removeItem('currentUser');
+                            updateUserGreeting();
+                            location.reload();
+                        }
                     });
                 }
             } else {
@@ -190,10 +191,16 @@
 
         function showRegistrationModal() {
             const name = prompt('Введіть ваше ім\'я:');
-            if (!name) return;
+            if (!name || !/^[a-zA-Zа-яА-ЯіІїЇєЄґҐ\s]+$/.test(name)) {
+                alert('❌ Будь ласка, введіть коректне ім\'я (тільки літери).');
+                return;
+            }
             
             const phone = prompt('Введіть ваш номер телефону:');
-            if (!phone) return;
+            if (!phone || isNaN(phone.replace(/\+/g, '')) || phone.length < 10) {
+                alert('❌ Це не схоже на номер телефону! (має бути мінімум 10 цифр)');
+                return;
+            }
             
             currentUser = {
                 name: name,
